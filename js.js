@@ -5,11 +5,10 @@ var menuWrap = document.querySelector('.menu_wrap img');
 console.log(menuWrap);
 
 menuWrap.onmousemove = function (event) {
-    console.log(event);
+    // console.log(event);
     if(event.clientX <300){
         menuWrap.src = 'img/1ru.png';
         console.log('0-300');
-
     }
     else if(event.clientX >=300 && event.clientX <=600) {
         menuWrap.src = 'img/2ru.png';
@@ -19,5 +18,4 @@ menuWrap.onmousemove = function (event) {
         menuWrap.src = 'img/3ru.png';
         console.log('600-900');
     }
-
 }
